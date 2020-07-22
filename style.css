@@ -102,7 +102,7 @@ header{
     height: 100%;
     object-fit: cover;
     opacity: 0.5;
-    animation: zoom 20s;
+    animation: zoom 10s;
 }
 @keyframes zoom{
     0%{
@@ -136,6 +136,7 @@ header{
     color: #ffffff;
     text-shadow: .2rem .2rem  rgba(0, 0, 0, 0.4);
     margin-bottom: 1.5rem;
+    text-transform: capitalize;
     opacity: 0;
     animation: moveBanner 1.2s 0.7s forwards;
 }
@@ -405,6 +406,7 @@ header{
 }
 
 .sessao-contato{
+    margin-top: 4rem;
     width: 100%;
     height: 100vh;
     background-color: #242424;
@@ -498,3 +500,70 @@ header{
     width: 100%;
     height: 2rem;
 }
+
+.sessao-orcamento{
+    width: 100%;
+    height: 100vh;
+    background: url(imgs/bg2.jpg);
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orcamento-wrapper{
+    width: 60%;
+    height: 80%;
+    background-color: #fff9;
+    border-radius: 10px;
+    box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+.sessao-orcamento h1{
+    position: absolute;
+    top: -2.5rem;
+    left: 2rem;
+    background: #F00000; 
+    background: -webkit-linear-gradient(to bottom, #DC281E, #F00000); 
+    background: linear-gradient(to bottom, #DC281E, #F00000);
+    padding: 0 3rem;
+    color: #ffffff;
+    font-family: var(--font-primary);
+    font-size: 3rem;
+    font-weight: lighter;
+    box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+.sessao-orcamento form{
+    margin: 4rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 2rem;
+    row-gap: 1.5rem;
+}
+
+.sessao-orcamento label{
+    font-family: var(--font-secundary);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.sessao-orcamento select{
+    font-family: var(--font-secundary);
+    width: 15rem;
+    font-size: 1.5rem;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    padding: 0.5rem;
+}
+
+.btn-orcamento{
+    text-transform: uppercase;
+    padding: 1rem;
+    cursor: pointer;
+    grid-column: 2;
+}
+

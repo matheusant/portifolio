@@ -22,11 +22,11 @@
 
         <header>
             <div class="img-wrapper"> 
-                <img src="imgs/bg3.jpg" alt="">
+                <img src="imgs/orcamento.jpg" alt="">
             </div>
             <div class="banner">
-                <h1>Web Developer</h1>            
-                <p>Matheus Santos</p>
+                <h1>Marcenaria Santos</h1>            
+                <p>Os melhores móveis</p>
                 <button>Saiba mais</button>   
             </div>
         </header>
@@ -177,6 +177,51 @@
                     </form>
                 </div>
             </div>
+        </section>
+
+        <section class="sessao-orcamento">
+            <div class="orcamento-wrapper">
+                <h1>Faça seu orçamento</h1>
+                <form action="">
+                    <label for="qtde">Móvel</label>
+                    <select name="qtde" id="qtde">
+                        <option value="">Armário</option>
+                        <option value="">Escrivaninha</option>
+                        <option value="">Mesa</option>
+                    </select>
+                    <label for="material">Tipo de madeira</label>
+                    <select name="material" id="material">
+                        <option value="">Carvalho</option>
+                        <option value="">Cedro</option>
+                        <option value="">Cerejeira</option>
+                        <option value="">Mogno</option>
+                        <option value="">Nogueira</option>
+                        <option value="">Pinho</option>
+                    </select>
+                    <label for="mad">Quero madeira envernizada</label>
+                    <input type="checkbox" name="mad" id="mad">
+                    <label>Cor</label>
+                    <div class="group-layout">
+                        <div>
+                            <input type="radio" name="cor" id="branco">
+                            <label for="branco">Branco</label>
+                        </div>
+                        
+                        <div>
+                            <input type="radio" name="cor" id="preto">
+                            <label for="preto">Preto</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="cor" id="cor-madeira">
+                            <label for="cor-madeira">Cor da Madeira</label>
+                        </div>
+                    </div>
+                    <label for="prazo">Prazo</label>
+                    <input type="range" name="prazo" id="prazo">
+                    <button class="btn btn-orcamento" type="submit">Enviar</button>
+                </form>
+            </div>
+
         </section>
     </div>
     
