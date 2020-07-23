@@ -15,6 +15,10 @@
     --font-action: "Muli", serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 
 .hamburguer{
     /*background-color: red;*/
@@ -152,6 +156,7 @@ header{
     padding: 1rem 3rem;
     border: none;
     border-radius: 7px;
+    outline: none;
     cursor: pointer;
     opacity: 0;
     animation: moveBanner 1.2s 0.9s forwards;
@@ -567,3 +572,50 @@ header{
     grid-column: 2;
 }
 
+footer{
+    width: 100%;
+    height: 8rem;
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content p{
+    font-family: var(--font-secundary);
+    color: #a7a7a7;
+    font-size: 1.2rem;
+}
+
+.social-list a{
+    margin: 0 2rem;
+    color: #a7a7a7;
+    font-size: 1.2rem;
+}
+
+.social-list ul{
+    display: flex;
+}
+
+#link-top{
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    width: 3rem;
+    height: 3rem;
+    background: #F00000; 
+    background: -webkit-linear-gradient(to bottom, #DC281E, #F00000); 
+    background: linear-gradient(to bottom, #DC281E, #F00000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    border-radius: .7rem;
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+}
