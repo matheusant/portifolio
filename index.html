@@ -26,7 +26,7 @@
             </div>
             <div class="banner">
                 <h1>Marcenaria Sampa</h1>            
-                <p>Movéis Planejados</p>
+                <p>Móveis Planejados</p>
                 <button>Saiba mais</button>   
             </div>
         </header>
@@ -162,7 +162,7 @@
                     <h1>Contato</h1>
                     <form action="">
                         <div class="input-group">
-                            <input type="text" class="field" id="nome">
+                            <input type="text" autocomplete="none" class="field" id="nome">
                             <label for="nome" class="field-label">Nome</label>
                         </div>
                         <div class="input-group">
@@ -183,20 +183,22 @@
             <div class="orcamento-wrapper">
                 <h1>Faça seu orçamento</h1>
                 <form action="">
-                    <label for="qtde">Móvel</label>
-                    <select name="qtde" id="qtde">
-                        <option value="">Armário</option>
-                        <option value="">Escrivaninha</option>
-                        <option value="">Mesa</option>
+                    <label for="mov">Móvel</label>
+                    <select name="mov" id="mov">
+                        <option value="0"></option>
+                        <option value="500">Armário</option>
+                        <option value="150">Escrivaninha</option>
+                        <option value="300">Mesa</option>
                     </select>
-                    <label for="material">Tipo de madeira</label>
-                    <select name="material" id="material">
-                        <option value="">Carvalho</option>
-                        <option value="">Cedro</option>
-                        <option value="">Cerejeira</option>
-                        <option value="">Mogno</option>
-                        <option value="">Nogueira</option>
-                        <option value="">Pinho</option>
+                    <label for="mat">Tipo de madeira</label>
+                    <select name="mat" id="mat">
+                        <option value="0"></option>
+                        <option value="50">Carvalho</option>
+                        <option value="50">Cedro</option>
+                        <option value="80">Cerejeira</option>
+                        <option value="150">Mogno</option>
+                        <option value="100">Nogueira</option>
+                        <option value="20">Pinho</option>
                     </select>
                     <label for="mad">Quero madeira envernizada</label>
                     <input type="checkbox" name="mad" id="mad">
@@ -213,11 +215,12 @@
                         </div>
                         <div>
                             <input type="radio" name="cor" id="cor-madeira">
-                            <label for="cor-madeira">Cor da Madeira</label>
+                            <label for="cor-madeira">Própria da Madeira</label>
                         </div>
                     </div>
                     <label for="prazo">Prazo</label>
-                    <input type="range" name="prazo" id="prazo">
+                    <input type="range" min="2" max="5" name="prazo" id="prazo">
+                    <label id="preco">R$ 0,00</label>
                     <button class="btn btn-orcamento" type="submit">Enviar</button>
                 </form>
             </div>
