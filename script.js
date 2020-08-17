@@ -3,6 +3,7 @@ document.querySelector(".hamburguer").addEventListener("click", () =>
 );
 
 
+
 document.querySelector("#mov").addEventListener("change", atualizarPreco)
 document.querySelector("#mat").addEventListener("change", atualizarPreco)
 document.querySelector("#mad").addEventListener("change", atualizarPreco)
